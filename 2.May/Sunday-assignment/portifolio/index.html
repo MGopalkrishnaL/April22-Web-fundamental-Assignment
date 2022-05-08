@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Porifolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main class="main-container">
+    <!-- Nav Bar -->
+        <nav class="navbar">
+            <ul>
+                <li> <a href="#home">Home</a></li>
+                <li> <a href="#about">About</a></li>
+                <li> <a href="#skills">Skills</a></li>
+                <li> <a href="#contacts">Contacts</a></li>
+                <li> <a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+    <!-- banner -->
+        <section  class=" container banner" id="home">
+            <article  class="image">
+                <img src="./images/man-watching-television-sofa.webp" alt="" 
+                width="300px" height="500px">
+            </article >
+            <article  class="content">
+                <p class="title">Hey! I am <span>M Gopal Krishna</span></p>
+                <p class="des">I am a software developer</p>
+                <button class="btn" href="#about">About Me</button>
+            </article >
+        </section >
+    <!--about -->
+        <section  class="about" id="about">
+            <article  class="content">
+                <h2 class="Aboutme">About Me</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae in quos quibusdam placeat corrupti quo. Quod beatae dolorum provident assumenda tempora doloribus quae distinctio deleniti? Odio exercitationem quisquam, error quidem minima ea soluta amet earum, sequi, dolores aliquid sapiente unde nisi laudantium. Nesciunt, autem quam recusandae quis voluptatibus sed. Aut reiciendis iusto, nulla autem ad error qui expedita debitis doloribus nisi odit officiis dignissimos id porro ipsum culpa pariatur rem tenetur quas. Alias iste nam dolores hic obcaecati sequi omnis ipsum, non optio tenetur. Totam exercitationem autem non ducimus ex magnam in sed aliquid explicabo saepe dolorum iure consequatur molestias mollitia similique fugit ipsa, eius, doloribus excepturi veniam illum. Dicta voluptates molestiae qui illo id, expedita culpa ipsam commodi consectetur, debitis minus quis est ad repellendus cumque eos, tenetur ut corporis praesentium. Sunt at natus modi, ea quis quia incidunt consequuntur ratione beatae tempora reiciendis inventore aut libero neque! Beatae enim molestiae incidunt eligendi, voluptates nesciunt sapiente fugit illum. Aliquid quo fugit dolor, exercitationem ad harum molestiae nihil nam doloremque cum nostrum cupiditate, autem vero maiores quibusdam ratione, expedita inventore beatae a tempore recusandae debitis earum. Iure nihil mollitia ab ad eum rerum iusto expedita dolorum voluptatum sunt sapiente alias sint, pariatur fugiat. Fugiat accusamus necessitatibus quos, reiciendis commodi dolore, dolores atque nam, ea repellat impedit quam tenetur. Facere beatae voluptas consectetur nostrum eius, voluptate veritatis similique eaque quis consequatur minima suscipit, enim eligendi quo explicabo ullam, esse sint aut? Ea voluptatem laboriosam quasi iste officia sed tenetur asperiores molestias.</p>
+            </article >
+            <article  class="image" >
+                <img src="https://img.freepik.com/free-vector/illustration-with-multitasking-design_23-2148415704.jpg?size=338&ext=jpg&uid=R70547497&ga=GA1.2.2020099904.1651939730" alt="" 
+                width="400px" height="500px">
+            </article >
+        </section >
+    <!--Skills -->
+        <section class="skills" id="skills">
+            <article  class="name">
+                <h3>Skills</h3>
+            </article >
+            <div class="icons">
+                <div class="grid-items"><i class="fa-brands fa-html5"></i>Html</div>
+                <div class="grid-items"><i class="fa-brands fa-css3"></i>CSS</div>
+                <div class="grid-items"><i class="fa-brands fa-js"></i>JAVA SCRIPT</div>
+                <div class="grid-items"><i class="fa-brands fa-bootstrap"></i>Boot Strap</div>
+            </div>
+        </section >
+    <!--Contact me -->
+        <section  class="contact" id="contacts">
+            <article class="img">
+                <img src="./images/organic-flat-customer-support-.webp" alt="">
+            </article >
+            <article class="content">
+                <h1>Contact Me </h1>
+                <p>Email ID :</p>
+                <label for="email">
+                    <input type="email" placeholder="MGK@Gmial.com" name="mail">
+                </label>
+                <p>Drop message</p>
+                <textarea name=" message" id="" cols="30" rows="10" placeholder="Any information regading tech"></textarea>
+                <p></p>
+            </article >
+        </section >
+    <!-- projects and work done -->
+        <section class="fam"  id="projects">
+            <h1>Projects</h1>
+        <div class="project img">
+            <img src="./images/group-happy-people-cheerful-character-pose-flat-vector-people-design_.webp" alt="">
+        </div>
+        <div class="frame">
+            <iframe  src="../frame_02-05-2022.html" frameborder="0px" name="left" width="600px" height="550px"></iframe>
+        </div>
+        </section >
+    <!--Footer -->
+        <footer class="foot">
+            <article class="content">
+               <h1>M Gopal Krishna</h1>
+            </article >
+            <div class="social">
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-solid fa-at"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <p><span id="year"></span>
+                    <script>
+                        var d = new Date();
+                        var n = d.getFullYear();
+                        document.getElementById("year").innerHTML = n;
+                    </script>
+                    Copyright All Right Reserved
+                </p>
+        </footer>    
+    </main>
+</body>
+</html>

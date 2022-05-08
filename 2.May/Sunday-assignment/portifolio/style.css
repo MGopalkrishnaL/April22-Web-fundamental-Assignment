@@ -1,0 +1,168 @@
+/* Nav section */
+.navbar {
+position: fixed;
+top:0%;
+background-color:beige;
+width: 100%;
+box-shadow:0px 0px 10px 5px;
+}
+ul {
+    list-style-type: none;
+    font-size: medium;
+    font-weight: 900;
+    margin-top: 0%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    padding: 25px;
+    background-color: beige;
+    text-decoration: none;
+    color: black;
+
+}
+/* banner section */
+/* using grid */
+.banner{
+    width: 100%;
+    margin: 0% 0%;
+    padding: 6% 0%;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    background-color:#3d78a4;
+}
+.banner .image img 
+{
+    width: 100%;
+    border-radius: 10%;
+}
+.banner .content 
+{
+    width: 100%;
+    margin: 2% 0%;
+    padding: 6% 20%;
+    font-family:'Oleo Script Swash Caps', cursive;
+}
+.banner .content .title 
+{
+    font-family:'Oleo Script Swash Caps', cursive;
+    font-size: 50px;
+}
+.banner .content .title span 
+{
+    font-weight: 900;
+}
+.banner .content .des 
+{
+    font-size: 25px;
+}
+.banner .content .btn 
+{
+    margin: auto; 
+    background-color:  navy;
+    color: black;
+    border: none;
+    padding: 2% 5%;
+    font-size: 20px;
+    border-radius: 31%;
+    cursor: pointer;
+    font-family:'Oleo Script Swash Caps', cursive;
+}
+/* about section using flex concept */
+.about 
+{
+    
+    display: flex;
+    margin: 0%;
+    padding: 2% 5%;
+    background-color: #bce6fc;
+    font-family:'Oleo Script Swash Caps', cursive; 
+}
+.about .content
+{
+    width: 50%;
+    text-align: center;
+    padding: 2% 3%;
+    
+}
+.about .image{
+    text-align: center;
+    padding: 0% 10%;
+}
+/* skills section using grid concept */
+.skills {
+    width: 100%;
+    height: 100px;
+    margin: 0% 0%;
+    background-image: linear-gradient(#bce6fc, #fffdf5);
+}
+.skills .name{
+    text-align: center;
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+.icons {
+    display: grid;
+    grid-template-columns: repeat(4,22%);
+    grid-gap: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 5%;
+}
+.grid-items{
+    background-color: azure;
+    border-radius: 25%;
+    height: 30px;
+    padding: 5px 3px;
+    margin-left: 30px;
+    box-shadow: 3px 2px 2px 1px;
+}
+/* contact me section  */
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    background-color: #fffdf5;
+}
+.contact .content {
+    padding: 20%;
+}
+.contact .img {
+    padding: 20%;
+}
+.contact .content h1 {
+    text-align: center;
+}
+/* project and work done section  */
+.fam {
+    text-align: center;
+    display: flex;
+    padding: 20px;
+    background-color:#a7caa9;
+    box-shadow: 2px 0px 2px 1px;
+    margin: 0%;
+}
+.fam h1 {
+    text-align: center;
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+.fam .project{
+    padding: 10% 10px;
+}
+.fam .frame {
+    box-shadow: 1px 2px 3px 1px;
+}
+/* footer section  */
+.foot{
+    text-align: center;
+    background-color: #7e6548;
+    height: 15%;
+    margin:0%;
+    padding: 5%;
+}
+.foot .social a{
+    color: aliceblue;
+    margin-left: 10px;
+    text-decoration: none;
+    background-color: transparent;
+}
