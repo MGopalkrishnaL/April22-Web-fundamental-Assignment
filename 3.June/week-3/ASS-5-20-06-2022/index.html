@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>20-06-2022</title>
+    <style>
+      body {
+        background-color: bisque;
+      }
+      div {
+        width: 500px;
+        height: 200px;
+        text-align: center;
+        box-shadow: 0 0 20px red;
+        margin: 100px auto;
+        background-color: antiquewhite;
+      }
+      input {
+        margin-top: 10%;
+      }
+    </style>
+    <script>
+      // var table = document.createElement("table");
+      // table.style.border = 1;
+      function func() {
+        //references of inputs
+        var input1 = document.getElementById("inp1");
+        var input2 = document.getElementById("inp2");
+        var td1 = document.createElement("td");
+        var td2 = document.createElement("td");
+        var div = document.querySelector("div");
+        var tr1 = document.createElement("tr");
+        // td1.innerText = input1.value;
+        // td2.innerText = input2.value;
+        var table = document.getElementById("tble");
+        // div.appendChild(table);
+        // table.appendChild(row);
+        // row.appendChild(td1);
+        // row.appendChild(td2);
+        table.appendChild(tr1);
+        tr1.appendChild(td1);
+        tr1.appendChild(td2);
+        // var row = table.insertRow();
+        // var td1 = row.insertCell();
+        // var td2 = row.insertCell();
+        td1.innerHTML = input1.value;
+        td2.innerHTML = input2.value;
+        input1.value = "";
+        input2.value = "";
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <input id="inp1" type="text" placeholder="names" value="" />
+      <input id="inp2" type="text" placeholder="city" value="" />
+      <button onclick="func()">submit</button>
+      <table border="1" id="tble">
+        <tr>
+          <th>name</th>
+          <th>city</th>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

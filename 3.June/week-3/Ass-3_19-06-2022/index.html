@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function gm() {
+        var h2 = document.getElementById("h2ref");
+        h2.style.color = "green";
+        h2.innerText = "Good Morning ,Geekster";
+      }
+      function ge() {
+        var h2 = document.getElementById("h2ref");
+        h2.style.color = "Blue";
+        h2.innerText = "Good Evening ,Geekster";
+      }
+      function gn() {
+        var h2 = document.getElementById("h2ref");
+        h2.style.color = "yellow";
+        h2.innerText = "Good Night ,Geekster";
+      }
+    </script>
+    <style>
+      body {
+        text-align: center;
+        padding: 10%;
+        background-color: antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 id="h2ref">Hello Geekster</h2>
+    <button id="b1" onclick="gm()">Good morning</button>
+    <button id="b2" onclick="ge()">Good evening</button>
+    <button id="b3" onclick="gn()">Good night</button>
+  </body>
+</html>

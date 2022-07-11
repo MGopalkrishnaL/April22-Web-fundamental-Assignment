@@ -4,14 +4,15 @@
     <title>Document</title>
     <script>
       function changepass() {
-        var a = document.getElementById("h21");
-        a.innerText = "welcome";
-        var b = document.getElementById("i1");
-        b.type = "text";
-        var c = document.getElementById("b1");
-        c.innerText = "hide password";
-        var d = document.getElementById("d1");
-        d.style.backgroundColor = "red";
+        var input = document.getElementById("i1");
+        var button = document.getElementById("b1");
+        if (input.type === "password") {
+          input.type = "text";
+          button.innerHTML = "hide password";
+        } else {
+          input.type = "password";
+          button.innerHTML = "show password";
+        }
       }
     </script>
     <style>
